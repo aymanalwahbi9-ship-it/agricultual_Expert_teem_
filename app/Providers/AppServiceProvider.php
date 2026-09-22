@@ -2,21 +2,17 @@
 
 namespace App\Providers;
 
+use App\Contracts\ImageAnalyzerInterface;
+use App\Services\MockImageAnalyzer;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Register any application services.
-     */
     public function register(): void
     {
-        //
+        $this->app->bind(ImageAnalyzerInterface::class, MockImageAnalyzer::class);
     }
 
-    /**
-     * Bootstrap any application services.
-     */
     public function boot(): void
     {
         //
