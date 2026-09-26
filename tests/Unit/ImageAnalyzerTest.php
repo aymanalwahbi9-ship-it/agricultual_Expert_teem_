@@ -21,7 +21,7 @@ class ImageAnalyzerTest extends TestCase
     #[Test]
     public function it_accepts_valid_image_and_returns_mock_result(): void
     {
-        $image = UploadedFile::fake()->image('plant.jpg', 800, 600);
+        $image = UploadedFile::fake()->create('plant.jpg', 200, 'image/jpeg');
 
         $result = $this->analyzer->analyze($image);
 
@@ -36,7 +36,7 @@ class ImageAnalyzerTest extends TestCase
     #[Test]
     public function it_returns_clear_mock_result_with_expected_structure(): void
     {
-        $image = UploadedFile::fake()->image('plant.png', 500, 500);
+        $image = UploadedFile::fake()->create('plant.png', 180, 'image/png');
 
         $result = $this->analyzer->analyze($image);
 
@@ -63,7 +63,7 @@ class ImageAnalyzerTest extends TestCase
     {
         $this->expectException(InvalidArgumentException::class);
 
-        $file = UploadedFile::fake()->image('huge.jpg')->size(6000);
+        $file = UploadedFile::fake()->create('huge.jpg', 6000, 'image/jpeg');
 
         $this->analyzer->analyze($file);
     }

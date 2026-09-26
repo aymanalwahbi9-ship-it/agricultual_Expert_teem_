@@ -5,31 +5,30 @@
 @section('content')
     <div class="mb-8 grid gap-6 lg:grid-cols-[1.25fr_.75fr] lg:items-center">
         <section>
-            <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-green-100 px-4 py-2 text-sm font-bold text-green-800">
-                <span class="h-2.5 w-2.5 rounded-full bg-green-600"></span>
+            <span class="section-tag">
+                <span class="h-2.5 w-2.5 rounded-full bg-emerald-600"></span>
                 خدمة إرشاد زراعي محلية
-            </div>
+            </span>
 
-            <h1 class="max-w-3xl text-3xl font-black leading-tight text-slate-900 sm:text-5xl">
+            <h1 class="section-title max-w-3xl">
                 افهم حالة محصولك
-                <span class="text-green-700">بخطوات بسيطة</span>
+                <span class="text-emerald-700">بخطوات بسيطة</span>
             </h1>
 
-            <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-                أدخل بيانات التربة أو ارفع صورة للنبات، وسيعرض لك النظام قراءة أولية
-                واضحة مع تنبيه إرشادي باللغة العربية.
+            <p class="section-copy text-lg">
+                أدخل بيانات التربة أو ارفع صورة للنبات، وسيعرض لك النظام قراءة أولية واضحة مع تنبيه إرشادي باللغة العربية.
             </p>
 
             <div class="mt-6 flex flex-wrap gap-3 text-sm font-bold text-slate-600">
-                <span class="rounded-full bg-white px-4 py-2 shadow-sm">واجهة عربية</span>
-                <span class="rounded-full bg-white px-4 py-2 shadow-sm">نتائج واضحة</span>
-                <span class="rounded-full bg-white px-4 py-2 shadow-sm">محاكاة تعليمية</span>
+                <span class="stat-pill">واجهة عربية</span>
+                <span class="stat-pill">نتائج واضحة</span>
+                <span class="stat-pill">محاكاة تعليمية</span>
             </div>
         </section>
 
-        <section class="relative overflow-hidden rounded-3xl bg-green-800 p-7 text-white shadow-xl">
-            <div class="absolute -left-12 -top-12 h-40 w-40 rounded-full bg-green-700"></div>
-            <div class="absolute -bottom-16 -right-10 h-48 w-48 rounded-full bg-green-900/60"></div>
+        <section class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-emerald-800 via-green-700 to-emerald-900 p-7 text-white shadow-[0_25px_50px_rgba(22,101,52,0.25)]">
+            <div class="absolute -left-10 -top-10 h-36 w-36 rounded-full bg-white/10"></div>
+            <div class="absolute -bottom-14 -right-8 h-44 w-44 rounded-full bg-emerald-950/35"></div>
 
             <div class="relative">
                 <div class="mb-6 text-6xl">🌱</div>
@@ -38,9 +37,8 @@
                     ابدأ بفحص مزرعتك
                 </h2>
 
-                <p class="mt-3 leading-7 text-green-100">
-                    استخدم القيم المتوفرة لديك. النتيجة أولية ومساعدة، ويُنصح دائمًا
-                    بمراجعة مهندس زراعي عند ظهور مشكلة.
+                <p class="mt-3 leading-7 text-emerald-50">
+                    استخدم القيم المتوفرة لديك. النتيجة أولية ومساعدة، ويُنصح دائمًا بمراجعة مهندس زراعي عند ظهور مشكلة.
                 </p>
             </div>
         </section>
@@ -48,7 +46,7 @@
 
     <section class="card">
         <div class="mb-7 border-b border-slate-100 pb-5">
-            <p class="text-sm font-bold text-green-700">
+            <p class="text-sm font-black text-emerald-700">
                 نموذج التشخيص
             </p>
 

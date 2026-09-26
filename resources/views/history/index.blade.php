@@ -4,21 +4,21 @@
 
 @section('content')
     <div class="mb-8">
-        <p class="text-sm font-bold text-green-700">
+        <span class="section-tag bg-emerald-100 text-emerald-800">
             سجل المستخدم
-        </p>
+        </span>
 
-        <h1 class="mt-2 text-3xl font-black text-slate-900 sm:text-4xl">
+        <h1 class="section-title mt-4">
             العمليات السابقة
         </h1>
 
-        <p class="mt-4 leading-8 text-slate-600">
+        <p class="section-copy">
             هنا تظهر عمليات تحليل الصورة وتحليل التربة التي تم تنفيذها.
         </p>
     </div>
 
     @if ($records->isEmpty())
-        <section class="card border-amber-200 bg-amber-50">
+        <section class="info-banner border-amber-200 bg-gradient-to-r from-amber-50 to-orange-50">
             <h2 class="text-xl font-black text-amber-950">
                 لا توجد عمليات محفوظة
             </h2>
@@ -37,7 +37,7 @@
                 <article class="card">
                     <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-start">
                         <div>
-                            <span class="rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-800">
+                            <span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-black text-emerald-800">
                                 @switch($record->operation_type)
                                     @case('image')
                                         تحليل صورة
@@ -61,7 +61,7 @@
                             </h2>
                         </div>
 
-                        <div class="text-sm text-slate-500">
+                        <div class="text-sm font-bold text-slate-500">
                             {{ $record->occurred_at?->format('Y-m-d H:i') }}
                         </div>
                     </div>

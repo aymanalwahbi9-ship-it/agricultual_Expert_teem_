@@ -62,9 +62,9 @@ class DiagnosisController extends Controller
         }
 
         if (in_array($data['operation_type'], ['image', 'combined'], true)) {
-            $imagePath = $request->file('image')->getRealPath();
+            $imageFile = $request->file('image');
 
-            $result['image'] = $imageAnalyzer->analyze($imagePath);
+            $result['image'] = $imageAnalyzer->analyze($imageFile);
 
             $condition = Condition::query()
                 ->where('name_ar', $result['image']['label'])

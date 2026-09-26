@@ -4,17 +4,16 @@
 
 @section('content')
     <div class="mb-8">
-        <p class="text-sm font-bold text-blue-700">
+        <span class="section-tag bg-blue-100 text-blue-800">
             قاعدة المعرفة الزراعية
-        </p>
+        </span>
 
-        <h1 class="mt-2 text-3xl font-black text-slate-900 sm:text-4xl">
+        <h1 class="section-title mt-4">
             ابحث عن حالة أو عرض زراعي
         </h1>
 
-        <p class="mt-4 max-w-3xl leading-8 text-slate-600">
-            اكتب كلمة مثل: اصفرار، ذبول، بقع، حشرة، أو نقص النيتروجين.
-            سيعرض النظام المعلومات المتوفرة في قاعدة المعرفة المحلية فقط.
+        <p class="section-copy">
+            اكتب كلمة مثل: اصفرار، ذبول، بقع، حشرة، أو نقص النيتروجين. سيعرض النظام المعلومات المتوفرة في قاعدة المعرفة المحلية فقط.
         </p>
     </div>
 

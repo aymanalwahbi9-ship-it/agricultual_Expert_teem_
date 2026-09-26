@@ -22,13 +22,13 @@ class MockImageAnalyzer implements ImageAnalyzerInterface
         $this->validateImage($image);
 
         return [
-            'condition_name' => 'نقص النيتروجين',
-            'detected_symptoms' => [
+            'label' => 'نقص النيتروجين',
+            'confidence' => 0.72,
+            'indicators' => [
                 'اصفرار الأوراق السفلية',
                 'ضعف النمو العام',
                 'شحوب لون الأوراق',
             ],
-            'confidence' => 0.72,
             'notes' => 'هذه نتيجة محاكاة تعليمية وليست تشخيصًا زراعيًا قطعيًا.',
             'is_definitive' => false,
         ];
